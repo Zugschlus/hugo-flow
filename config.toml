@@ -1,0 +1,63 @@
+baseurl = "https://wwwstage.incluesion.de/"
+languageCode = "de-de"
+defaultContentLanguage = "de"
+metadataformat = "yaml"
+title = "incluesion - durchblick inklusive"
+theme = "personal-web"
+copyright = "(C) Copyright 2020 by Marc Haber"
+
+[params]
+	name = ""
+	description = ""
+
+	custom_css = []
+	custom_js  = []
+
+	highlightjs = ""
+
+[params.assets]
+	favicon = "incluesion-favicon.png"
+
+[params.intro]
+	main = "Navigation"
+	sub = " "
+
+[params.sidebar]
+	logo = "muenzeMitSchriftzug-200x223.png"
+
+
+	github_button  = false
+	travis_button  = false
+	codecov_button = false
+	gratipay = ""
+
+	show_relations = false
+
+[menu]
+
+[[menu.main]]
+  identifier = "main"
+  name = "Startseite"
+  title = "Startseite"
+  url = "/"
+  weight = -120
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = true
+    respectDoNotTrack = true
+    useSessionStorage = false
+  [privacy.twitter]
+    disable =  true
+    enableDNT = true
+    simple = false
+
+[markup.goldmark.renderer]
+unsafe= true
+
